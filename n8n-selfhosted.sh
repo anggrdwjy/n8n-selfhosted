@@ -7,6 +7,7 @@ echo "   ==============================================   ";
 echo "                                                    ";
 echo -n "   Create User for N8N Container      : "
 read USER
+echo "                                                    ";
 echo -n "   Create Password for N8N Container  : "
 read PASSWORD
 echo "                                                    ";
