@@ -5,9 +5,9 @@ echo "   ==============================================   ";
 echo "        Create Docker Container N8N Non-SSL         ";
 echo "   ==============================================   ";
 echo "                                                    ";
-echo -n " Create User for N8N Container      : "
+echo -n "   Create User for N8N Container      : "
 read USER
-echo -n " Create Password for N8N Container  : "
+echo -n "   Create Password for N8N Container  : "
 read PASSWORD
 echo "                                                    ";
 echo "   ==============================================   ";
