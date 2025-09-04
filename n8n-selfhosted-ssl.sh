@@ -1,20 +1,20 @@
 #!/bin/bash
 #By Anggarda Saputra Wijaya
 #Create Docker Container N8N Selfhosted SSL
+echo "                                                    ";
 echo "   ==============================================   ";
 echo "           Create Docker Container N8N SSL          ";
 echo "   ==============================================   ";
 echo "                                                    ";
 echo -n "   Create User for N8N Container      : "
 read USER
-echo "                                                    ";
 echo -n "   Create Password for N8N Container  : "
 read PASSWORD
-echo "                                                    ";
 echo -n "   Your Domain for N8N Container      : "
 read YOURDOMAIN
 echo "                                                    ";
 echo "   ==============================================   ";
+echo "                                                    ";
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get install apt-transport-https ca-certificates curl software-properties-common -y
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
