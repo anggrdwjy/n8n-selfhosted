@@ -21,7 +21,7 @@ sudo apt-get update -y
 sudo apt update && sudo apt install nginx certbot python3-certbot-nginx -y
 sudo systemctl enable nginx
 sudo systemctl start nginx
-sudo apt-get install docker-ce docker-ce-cli containerd.io -y
+sudo apt-get install docker.io docker-ce docker-ce-cli containerd.io -y
 docker run -d --name n8n -p 5678:5678 -e N8N_BASIC_AUTH_ACTIVE=true -e N8N_BASIC_AUTH_USER=$USER -e N8N_BASIC_AUTH_PASSWORD=$PASSWORD -e N8N_SECURE_COOKIE=false -e N8N_PORT=5678 -e GENERIC_TIMEZONE=UTC+7 -v ~/.n8n:/home/node/.n8n n8nio/n8n
 docker ps -a
 sudo chown -R 1000:1000 ~/.n8n
