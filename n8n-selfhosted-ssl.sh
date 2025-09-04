@@ -38,5 +38,5 @@ ufw allow 5678
 ufw enable
 systemctl status ufw
 echo "   ==============================================   ";
-echo "    Access Website [https://youripaddress:5678]     ";
+echo "       Access Website [https://youripaddress]       ";
 echo "   ==============================================   ";
