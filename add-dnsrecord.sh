@@ -11,7 +11,7 @@ echo -n "   Pointing Public IP      : "
 read PUBLIC_IP
 echo "                                                    ";
 echo "                                                    ";
-sudo cp support/cloudflare_dns_record.sh add_dns.sh
+sudo cp support/cloudflare-dnsrecord.sh add_dns.sh
 sed -i "s/zone_id/$ZONE_ID/g" add_dns.sh
 sed -i "s/api_id/$API_ID/g" add_dns.sh
 sed -i "s/domain/$DOMAIN/g" add_dns.sh
