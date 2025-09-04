@@ -1,19 +1,17 @@
 #!/bin/bash
 #BY Anggarda Saputra Wijaya
 #Add DNS Record Cloudflare
+echo "                                                    ";
 echo "   ==============================================   ";
 echo "             Add DNS Record Cloudflare              ";
 echo "   ==============================================   ";
 echo "                                                    ";
 echo -n "   Cloudflare Zone-ID      : "
 read ZONE_ID
-echo "                                                    ";
 echo -n "   Cloudflare API-Key      : "
 read API_ID
-echo "                                                    ";
 echo -n "   Add Domain DNS Record   : "
 read DOMAIN
-echo "                                                    ";
 echo -n "   Pointing Public IP      : "
 read PUBLIC_IP
 echo "                                                    ";
