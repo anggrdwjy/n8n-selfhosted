@@ -28,6 +28,7 @@ docker start n8n
 docker ps -a
 docker update --restart unless-stopped n8n
 ufw allow 80
+ufw allow 22
 ufw allow 443
 ufw allow 5678
 ufw enable
