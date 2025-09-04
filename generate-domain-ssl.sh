@@ -4,7 +4,7 @@
 echo "   ==============================================   ";
 echo "              Generate Domain with SSL              ";
 echo "   ==============================================   ";
-echo -n " Custom DOMAIN : "
+echo -n "   Custom DOMAIN : "
 read DOMAIN
 echo "                                                    ";
 sudo cp support/domain /etc/nginx/sites-available/$DOMAIN
