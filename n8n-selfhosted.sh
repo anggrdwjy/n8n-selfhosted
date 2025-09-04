@@ -27,6 +27,11 @@ sudo chmod -R 755 ~/.n8n
 docker start n8n
 docker ps -a
 docker update --restart unless-stopped n8n
+ufw allow 80
+ufw allow 443
+ufw allow 5678
+ufw enable
+systemctl status ufw
 echo "   ==============================================   ";
 echo "     Access Website [http://youripaddress:5678]     ";
 echo "   ==============================================   ";
