@@ -1,13 +1,15 @@
 services:
   n8n:
     image: n8nio/n8n:latest
-    restart: unless-stopped
+    restart: always
     ports:
-      - "15678:5678" # Dashboard UI N8N
+      - '5678:5678' # Dashboard UI N8N
     environment:
       - N8N_BASIC_AUTH_ACTIVE=true
-      - N8N_BASIC_AUTH_USER=n8n
-      - N8N_BASIC_AUTH_PASSWORD=n8n
+      - N8N_BASIC_AUTH_USER=user
+      - N8N_BASIC_AUTH_PASSWORD=password
+      - N8N_SECURE_COOKIE=false 
+      - GENERIC_TIMEZONE=UTC+7
     volumes:
       - ./n8n_data:/home/node/.n8n
 
