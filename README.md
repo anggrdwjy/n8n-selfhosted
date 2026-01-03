@@ -84,9 +84,9 @@ Dashboard UI Portainer
 https://ip-address:19443
 ```
 
-Dashboard UI N8N Selfhosted
+Dashboard UI N8N Selfhosted [HTTP Only]
 ```
-https://ip-address:15678
+http://ip-address:15678
 ```
 ## Support
 
