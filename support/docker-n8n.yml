@@ -1,7 +1,7 @@
 services:
   n8n:
     image: n8nio/n8n:latest
-    restart: always
+    restart: unless-stopped
     ports:
       - '15678:5678' # Dashboard UI N8N
     environment:
