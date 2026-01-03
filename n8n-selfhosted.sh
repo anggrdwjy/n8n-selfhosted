@@ -8,6 +8,7 @@ chmod +x /usr/local/bin/docker-compose
 sudo apt-get update -y
 mkdir /home/portainer
 mkdir /home/n8n
+mkdir /home/n8n/n8n_data
 cp support/docker-portainer.yml /home/portainer/docker-compose.yml
 cp support/docker-n8n.yml /home/n8n/docker-compose.yml
 cd /home/portainer && docker-compose up -d
